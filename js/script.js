@@ -217,7 +217,7 @@ window.addEventListener('DOMContentLoaded', () => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
 
-            const statusMessage = document.createElement('img');
+            let statusMessage = document.createElement('img');
             statusMessage.src = message.loading;
             statusMessage.style.cssText = `
                 display: block;
@@ -271,5 +271,13 @@ window.addEventListener('DOMContentLoaded', () => {
             prevModalDialog.classList.remove('hide');
             closeModal();
         }, 4000);
-    }
+    }  
+
+
+    fetch('http://localhost:3000/mgenu')
+        .then(data => data.json())
+        .then(res => console.log(res));
+
 });
+
+
