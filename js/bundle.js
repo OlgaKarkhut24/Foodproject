@@ -767,7 +767,6 @@ window.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
 })();
 
 /******/ })()
