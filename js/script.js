@@ -27,4 +27,3 @@ window.addEventListener('DOMContentLoaded', function() {
         field: '.offer__slider-inner'
     });
 });
-
